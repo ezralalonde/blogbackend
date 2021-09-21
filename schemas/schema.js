@@ -15,6 +15,7 @@ import footer from "./footer";
 import contact from "./contact";
 import gallery from "./gallery";
 import navbar from "./navbar";
+import password from "./password";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -34,6 +35,7 @@ export default createSchema({
     contact,
     gallery,
     navbar,
+    password,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
