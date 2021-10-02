@@ -16,5 +16,11 @@ export default {
         storeOriginalFilename: true,
       },
     },
+    {
+      name: "folder",
+      title: "Folder",
+      type: "reference",
+      to: { type: "folder" },
+    },
   ],
 };
