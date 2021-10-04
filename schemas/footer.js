@@ -25,12 +25,5 @@ export default {
         },
       ],
     },
-
-    {
-      name: "officeinfo",
-      title: "Office Information",
-      type: "array",
-      of: [{ type: "string" }],
-    },
   ],
 };
