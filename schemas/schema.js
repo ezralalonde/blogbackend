@@ -6,7 +6,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 // We import object and document schemas
 import blockContent from "./blockContent";
-import category from "./category";
+import folder from "./folder";
 import post from "./post";
 import author from "./author";
 import homepage from "./homepage";
@@ -16,6 +16,9 @@ import contact from "./contact";
 import gallery from "./gallery";
 import navbar from "./navbar";
 import password from "./password";
+import page from "./page";
+import privatedocument from "./privatedocument";
+import privatefolder from "./privatefolder";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -29,13 +32,16 @@ export default createSchema({
     homepage,
     post,
     author,
-    category,
+    folder,
     document,
     footer,
     contact,
     gallery,
     navbar,
     password,
+    page,
+    privatedocument,
+    privatefolder,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

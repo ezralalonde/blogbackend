@@ -1,6 +1,6 @@
 export default {
-  name: "documents",
-  title: "Documents",
+  name: "privatedocument",
+  title: "Private Documents",
   type: "document",
   fields: [
     {
@@ -17,10 +17,10 @@ export default {
       },
     },
     {
-      name: "folder",
+      name: "privatefolder",
       title: "Folder",
       type: "reference",
-      to: { type: "folder" },
+      to: { type: "privatefolder" },
     },
   ],
 };
