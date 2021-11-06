@@ -20,7 +20,7 @@ export default {
     {
       name: "content",
       title: "Content",
-      type: "string",
+      type: "blockContent",
     },
   ],
 };
