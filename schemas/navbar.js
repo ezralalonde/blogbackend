@@ -25,10 +25,5 @@ export default {
         },
       ],
     },
-    {
-      name: "logo",
-      title: "Navigation Logo",
-      type: "image",
-    },
   ],
 };
