@@ -18,4 +18,9 @@ export default {
       hidden: true,
     },
   ],
+  preview: {
+    select: {
+      title: "Item.name",
+    },
+  },
 };
