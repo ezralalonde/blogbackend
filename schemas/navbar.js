@@ -4,26 +4,18 @@ export default {
   type: "document",
   fields: [
     {
-      name: "navbar",
-      title: "Navigation",
+      name: "Item",
       type: "object",
       fields: [
-        {
-          name: "names",
-          type: "array",
-
-          of: [
-            {
-              type: "object",
-              fields: [
-                { name: "name", type: "string", title: "Name" },
-                { name: "url", type: "string", title: "URL" },
-              ],
-            },
-          ],
-          title: "Navigation",
-        },
+        { name: "name", type: "string", title: "Name" },
+        { name: "url", type: "string", title: "URL" },
       ],
+    },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
     },
   ],
 };
