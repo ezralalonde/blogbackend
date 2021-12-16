@@ -12,8 +12,6 @@ import author from "./author";
 import homepage from "./homepage";
 import document from "./document";
 import footer from "./footer";
-import contact from "./contact";
-import gallery from "./gallery";
 import navbar from "./navbar";
 import password from "./password";
 import page from "./page";
@@ -35,8 +33,6 @@ export default createSchema({
     folder,
     document,
     footer,
-    contact,
-    gallery,
     navbar,
     password,
     page,

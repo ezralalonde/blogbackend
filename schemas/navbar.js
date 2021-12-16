@@ -7,9 +7,21 @@ export default {
       name: "Item",
       type: "object",
       fields: [
-        { name: "name", type: "string", title: "Name" },
-        { name: "url", type: "string", title: "URL" },
+        {
+          name: "name",
+          type: "string",
+          title: "Name",
+          validation: (Rule) => Rule.required(),
+        },
+        {
+          name: "url",
+          type: "string",
+          title: "URL",
+          validation: (Rule) => Rule.required(),
+        },
       ],
+
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "order",

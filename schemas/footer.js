@@ -7,6 +7,7 @@ export default {
       name: "title",
       title: "Title",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "items",
@@ -22,6 +23,7 @@ export default {
         },
       ],
       title: "Items",
+      validation: (Rule) => Rule.required(),
     },
   ],
   preview: {
