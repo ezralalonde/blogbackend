@@ -4,26 +4,29 @@ export default {
   type: "document",
   fields: [
     {
-      name: "locallinks",
-      title: "Local Links",
-      type: "object",
-      fields: [
-        {
-          name: "names",
-          type: "array",
+      name: "title",
+      title: "Title",
+      type: "string",
+    },
+    {
+      name: "items",
+      type: "array",
 
-          of: [
-            {
-              type: "object",
-              fields: [
-                { name: "name", type: "string", title: "Name" },
-                { name: "url", type: "string", title: "URL" },
-              ],
-            },
+      of: [
+        {
+          type: "object",
+          fields: [
+            { name: "name", type: "string", title: "Name" },
+            { name: "url", type: "string", title: "URL" },
           ],
-          title: "Names",
         },
       ],
+      title: "Items",
     },
   ],
+  preview: {
+    select: {
+      title: "title",
+    },
+  },
 };
