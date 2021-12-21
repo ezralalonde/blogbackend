@@ -4,26 +4,35 @@ export default {
   type: "document",
   fields: [
     {
-      name: "navbar",
-      title: "Navigation",
+      name: "Item",
       type: "object",
       fields: [
         {
-          name: "names",
-          type: "array",
-
-          of: [
-            {
-              type: "object",
-              fields: [
-                { name: "name", type: "string", title: "Name" },
-                { name: "url", type: "string", title: "URL" },
-              ],
-            },
-          ],
-          title: "Navigation",
+          name: "name",
+          type: "string",
+          title: "Name",
+          validation: (Rule) => Rule.required(),
+        },
+        {
+          name: "url",
+          type: "string",
+          title: "URL",
+          validation: (Rule) => Rule.required(),
         },
       ],
+
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
     },
   ],
+  preview: {
+    select: {
+      title: "Item.name",
+    },
+  },
 };

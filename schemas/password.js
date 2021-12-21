@@ -7,6 +7,8 @@ export default {
       name: "password",
       title: "Password",
       type: "string",
+
+      validation: (Rule) => Rule.required(),
     },
   ],
 };

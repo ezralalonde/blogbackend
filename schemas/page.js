@@ -7,6 +7,8 @@ export default {
       name: "title",
       title: "Title",
       type: "string",
+
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "slug",
@@ -16,11 +18,15 @@ export default {
         source: "title",
         maxLength: 96,
       },
+
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "content",
       title: "Content",
       type: "blockContent",
+
+      validation: (Rule) => Rule.required(),
     },
   ],
 };

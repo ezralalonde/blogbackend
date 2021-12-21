@@ -7,6 +7,8 @@ export default {
       name: "title",
       title: "Title",
       type: "string",
+
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "document",
@@ -15,12 +17,16 @@ export default {
       options: {
         storeOriginalFilename: true,
       },
+
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "privatefolder",
       title: "Folder",
       type: "reference",
       to: { type: "privatefolder" },
+
+      validation: (Rule) => Rule.required(),
     },
   ],
 };
