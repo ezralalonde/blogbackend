@@ -1,6 +1,6 @@
 export default {
   name: "post",
-  title: "Post",
+  title: "News",
   type: "document",
   fields: [
     {
@@ -21,14 +21,7 @@ export default {
 
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: "author",
-      title: "Author",
-      type: "reference",
-      to: { type: "author" },
 
-      validation: (Rule) => Rule.required(),
-    },
     {
       name: "mainImage",
       title: "Main image",
@@ -59,14 +52,6 @@ export default {
   preview: {
     select: {
       title: "title",
-      author: "author.name",
-      media: "mainImage",
-    },
-    prepare(selection) {
-      const { author } = selection;
-      return Object.assign({}, selection, {
-        subtitle: author && `by ${author}`,
-      });
     },
   },
 };

@@ -1,6 +1,6 @@
 export default {
   name: "folder",
-  title: "Folders",
+  title: "Public Folders",
   type: "document",
   fields: [
     {
