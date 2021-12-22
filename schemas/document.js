@@ -1,6 +1,6 @@
 export default {
   name: "documents",
-  title: "Documents",
+  title: "Public Documents",
   type: "document",
   fields: [
     {
