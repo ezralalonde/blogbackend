@@ -21,10 +21,10 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: "folder",
+      name: "privatefolder",
       title: "Folder",
       type: "reference",
-      to: { type: "folder" },
+      to: { type: "privatefolder" },
 
       validation: (Rule) => Rule.required(),
     },

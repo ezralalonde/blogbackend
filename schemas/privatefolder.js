@@ -1,6 +1,6 @@
 export default {
   name: "privatefolder",
-  title: "Private Folders",
+  title: "Folders",
   type: "document",
   fields: [
     {
@@ -24,9 +24,11 @@ export default {
     },
 
     {
-      name: "description",
-      title: "Description",
-      type: "text",
+      title: "Make this Folder Private",
+      name: "private",
+      type: "boolean",
+
+      validation: (Rule) => Rule.required(),
     },
   ],
 };

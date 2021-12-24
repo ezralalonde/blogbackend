@@ -6,7 +6,6 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 // We import object and document schemas
 import blockContent from "./blockContent";
-import folder from "./folder";
 import post from "./post";
 import homepage from "./homepage";
 import document from "./document";
@@ -28,7 +27,6 @@ export default createSchema({
     // in the studio.
     homepage,
     post,
-    folder,
     document,
     footer,
     navbar,
