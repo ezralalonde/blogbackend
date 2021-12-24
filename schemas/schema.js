@@ -8,7 +8,6 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import blockContent from "./blockContent";
 import post from "./post";
 import homepage from "./homepage";
-import document from "./document";
 import footer from "./footer";
 import navbar from "./navbar";
 import password from "./password";
@@ -27,7 +26,6 @@ export default createSchema({
     // in the studio.
     homepage,
     post,
-    document,
     footer,
     navbar,
     password,
